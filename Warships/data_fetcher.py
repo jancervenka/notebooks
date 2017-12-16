@@ -19,4 +19,4 @@ data = [submission.title for submission in WP.top('all', limit = 1000)]
 data = pd.DataFrame({'title' : data})
 
 # %%
-data.to_csv('warships.csv', encoding =' utf-8')
+data.to_csv('warships.csv', index = False, encoding =' utf-8')
